@@ -1,0 +1,106 @@
+body {
+    background-color: #04060f;
+    color: #8aa1ce;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    line-height: 1.7;
+    animation: cambiarFondo 5s infinite alternate;
+}
+
+h1 {
+    color: #56ccf2;
+    text-align: center;
+    font-size: 36px;
+    animation: aparecer 2s;
+    font-family: 'Times New Roman', serif;;
+}
+
+h2 {
+    color: #4cc5f2;
+   
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.contenedor {
+    border: 3px solid #5181e0;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+p {
+    border: 3px solid #5181e0;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.contenedor p {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-align: justify;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #56ccf2;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+
+
+img:hover {
+    transform: scale(1.05);
+}
+
+hr {
+    border: 1px solid #56ccf2;
+    margin: 30px 0;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cambiarFondo {
+    from {
+        background-color: #050816;
+    }
+
+    to {
+        background-color: #101b35;
+    }
+    to {
+        background-color: #152447;
+    }
+}
+
+/* PIE DE PAGINA */
+
+.pie {
+    text-align: center;
+    color: #56ccf2;
+    font-size: 14px;
+}
